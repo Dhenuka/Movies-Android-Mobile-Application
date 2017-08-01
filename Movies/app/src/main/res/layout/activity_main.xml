@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+Assignment -Homework 2 .
+File Name -mainActivity.xml
+Group - Dhenuka Bhargavi Rangam(UNCC ID:800963261)
+      - Sunisha Chalasani(UNCC ID:800962445)
+
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerVertical="false">
+
+
+    <Button
+        android:text="@string/button_lable_add"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:id="@+id/addID"
+        android:onClick="addMovie"/>
+
+    <Button
+        android:text="@string/Button_Edit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editID"
+        android:layout_below="@+id/addID"
+        android:layout_alignLeft="@+id/addID"
+        android:layout_alignStart="@+id/addID"
+        android:onClick="editMovie"/>
+
+    <Button
+        android:text="@string/Button_delete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteID"
+        android:layout_below="@+id/editID"
+        android:layout_alignLeft="@+id/editID"
+        android:layout_alignStart="@+id/editID"
+        android:onClick="deleteMovie"/>
+
+    <Button
+        android:text="@string/Button_year"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/showyearID"
+        android:layout_below="@+id/deleteID"
+        android:layout_alignLeft="@+id/deleteID"
+        android:layout_alignStart="@+id/deleteID"
+        android:onClick="showByYear"/>
+
+    <Button
+        android:text="@string/show_list_label"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/showRatingID"
+        android:layout_below="@+id/showyearID"
+        android:layout_alignLeft="@+id/showyearID"
+        android:layout_alignStart="@+id/showyearID"
+        android:onClick="showByRating"/>
+
+</RelativeLayout>
